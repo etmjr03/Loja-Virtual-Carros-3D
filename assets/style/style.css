@@ -9,11 +9,11 @@
 } */
 
 :root {
-    --roxo: rgb(157, 89, 246);
+    --laranja: rgb(250, 119, 25);
     --branco: #fff;
 }
 
-h1 {
+h1, h2, p {
     text-align: center;
 }
 
@@ -25,7 +25,8 @@ h1 {
     margin-bottom: 10px;
     width: 80vw;
     height: 50vh;
-    border: solid 1px var(--roxo);
+    border: transparent 1px;
+    background: linear-gradient(150deg, var(--laranja), var(--branco));
     border-radius: 10px;
 }
 
@@ -35,7 +36,7 @@ h1 {
     height: 30px;
     margin-top: 10px;
     font-size: 20px;
-    background-color: var(--roxo);
+    background-color: var(--laranja);
     color: var(--branco);
     border: none;
     cursor: pointer;
