@@ -18,9 +18,7 @@
         e em realidade aumentada.
     </p>
 
-    <div class="box">
-        
-    </div>
+    <h2>BMW 750i</h2>
 
     <model-viewer
     class="img-carro"
@@ -43,6 +41,8 @@
 
     </model-viewer>
 
+    <h2>Centenario LP 770-4</h2>
+
     <model-viewer
     class="img-carro"
     ar
@@ -51,6 +51,29 @@
     ar-placement="floor"
     src="./assets/centenario_lp770-4_2016.glb"
     ios-src="./assets/centenario_lp770-4_2016.usdz"
+    poster=""
+    shadow-intensity="1"
+    reveal="auto"
+    camera-controls
+    auto-rotate
+    >
+
+    <button slot="ar-button" class="button-ar">
+        Ver carro em sua frente!
+    </button>
+
+    </model-viewer>
+
+    <h2>Ferrari F50</h2>
+
+    <model-viewer
+    class="img-carro"
+    ar
+    ar-modes="scene-viewer quick-look webxr"
+    ar-scale="auto"
+    ar-placement="floor"
+    src="./assets/ferrari_f50_1995.glb"
+    ios-src="./assets/ferrari_f50_1995.usdz"
     poster=""
     shadow-intensity="1"
     reveal="auto"

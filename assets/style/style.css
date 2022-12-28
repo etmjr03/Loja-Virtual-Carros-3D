@@ -9,7 +9,7 @@
 } */
 
 :root {
-    --laranja: rgb(250, 119, 25);
+    --azul: rgb(17, 94, 248);
     --branco: #fff;
 }
 
@@ -26,7 +26,8 @@ h1, h2, p {
     width: 80vw;
     height: 50vh;
     border: transparent 1px;
-    background: linear-gradient(150deg, var(--laranja), var(--branco));
+    background: linear-gradient(150deg, var(--azul), var(--branco));
+    box-shadow: 0 0 10px 5px rgb(4, 4, 4);
     border-radius: 10px;
 }
 
@@ -36,7 +37,7 @@ h1, h2, p {
     height: 30px;
     margin-top: 10px;
     font-size: 20px;
-    background-color: var(--laranja);
+    background-color: var(--azul);
     color: var(--branco);
     border: none;
     cursor: pointer;
