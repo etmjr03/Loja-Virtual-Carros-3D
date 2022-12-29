@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veja seu carro em 3D</title>
     <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <h1>Carros em 3D</h1>
+
+    <header>
+        <h1 class="titulo">Modern Cars</h1>
+
+        <div id="menu-mobile" class="mobile" onclick="clickMobile(), clickMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Carros</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">contato</a></li>
+            </ul>
+        </menu>
+    </header>
 
     <h2>Navegue e encontre seu carro!</h2>
 
@@ -86,7 +109,6 @@
     </button>
 
     </model-viewer>
-
     
 </body>
 </html>

@@ -4,17 +4,58 @@
     box-sizing: border-box;
 }
 
-/* html {
-    background: rgb(41, 39, 39);
-} */
+html {
+    background: var(--cinza-escuro);
+}
 
 :root {
     --azul: rgb(17, 94, 248);
-    --branco: #fff;
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+    --cinza-escuro: rgb(41, 39, 39);
 }
 
-h1, h2, p {
+header {
+    background: var(--azul);
+    padding: 10px;
     text-align: center;
+}
+
+menu {
+    display: none;
+}
+
+menu > h1 {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0 1px 0;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--preto);
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+menu > ul > li > a:hover {
+    color: var(--branco);
+}
+
+h2, p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--branco);
 }
 
 .img-carro {
@@ -41,4 +82,63 @@ h1, h2, p {
     color: var(--branco);
     border: none;
     cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+}
+
+.mobile {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: var(--branco);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile span {
+    position: absolute;
+    left: 15px;
+    width: 40px;
+    height: 4px;
+    background: var(--azul);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.mobile span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+}
+
+.mobile.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.mobile span:nth-child(2) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+
+.mobile.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.mobile.active span:nth-child(3) {
+    transform: translateX(60px);
 }
